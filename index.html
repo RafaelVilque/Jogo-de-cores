@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo de Adivinhação de Cores</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            <!-- Cabeçalho -->
+            <div class="header">
+                <h1>🎮 Adivinhe a Cor</h1>
+                <p>Você tem 3 tentativas para acertar!</p>
+            </div>
+
+            <!-- Contador de Tentativas -->
+            <div class="attempts-box">
+                <span class="attempts-label">Tentativas Restantes:</span>
+                <span class="attempts-number" id="attempts">3</span>
+            </div>
+
+            <!-- Mensagem de Feedback -->
+            <div class="message-box info" id="message">
+                Bem-vindo! Adivinhe a cor sorteada. Você tem 3 tentativas!
+            </div>
+
+            <!-- Entrada de Cor -->
+            <div class="input-group active" id="inputGroup">
+                <label for="colorInput">Digite o nome da cor em inglês:</label>
+                <input 
+                    type="text" 
+                    id="colorInput" 
+                    placeholder="Ex: red, blue, green..." 
+                    autocomplete="off"
+                >
+            </div>
+
+            <!-- Botões -->
+            <div class="button-group">
+                <button class="btn-guess" id="guessBtn">Adivinhar</button>
+                <button class="btn-restart" id="restartBtn">Jogar Novamente</button>
+            </div>
+
+            <!-- Lista de Cores Disponíveis -->
+            <div class="colors-list">
+                <span class="colors-label">Cores disponíveis:</span>
+                <div class="colors-tags" id="colorsList"></div>
+            </div>
+
+            <!-- Rodapé -->
+            <div class="footer">
+                <p>Projeto Prático C3 - Jogo de Adivinhação de Cores</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
